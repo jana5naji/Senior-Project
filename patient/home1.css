@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@100;200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+header .img {
+  width: 90px;
+  top: auto;
+  display: flex;
+  padding: 8px;
+}
+.navigation a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navigation a:hover {
+  color: #0b41ff;
+}
+
+section {
+  padding: 100px 160px;
+}
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url("../pic/Picture2.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.main .med {
+  color: #0b41ff;
+  letter-spacing: 6px;
+  font-weight: bold;
+}
+
+.main p {
+  width: 650px;
+  margin-top: 20px;
+  text-align: justify;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.main .h1 {
+  margin-top: 25px;
+  font-weight: bold;
+  color: #0b41ff;
+  font-size: 35px;
+}
+
+.main h6 {
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #0b41ff;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  border: 1px solid #0b41ff;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  float: left;
+  justify-content: center;
+  margin: 20px;
+  margin-top: 50px;
+  transition: 0.7s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  text-align: center;
+  font-size: 60px;
+}
+.info {
+  text-align: center;
+}
+.info h3 {
+  color: #0b41ff;
+}
+
+.material-symbols-outlined {
+  font-size: 50px;
+}
+
+.footer {
+  background-color: #00008b;
+  color: white;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  font-size: 20px;
+}
+.footer .email {
+  text-decoration: none;
+  color: white;
+}
+.text {
+  font-size: 40px;
+  font-weight: bold;
+}

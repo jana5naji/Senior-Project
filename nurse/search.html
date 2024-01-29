@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="home2.css" />
+    <title>Search</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="../pic/logo1.png" alt="your logo" class="img" />
+      <nav class="navigation">
+        <a href="#home">Home</a>
+        <a href=" patient.html">Patient</a>
+        <a href=" doctor.php" target="_blank">Doctors</a>
+        <a href="../logout.php">Logout</a>
+      </nav>
+    </header>
+    <section class="main">
+      <form action="">
+        <input type="number" name="" id="id" />
+        <input type="text" name="" id="name" />
+        <input
+          type="button"
+          name=""
+          id=""
+          onclick="search()"
+          value="Search"
+          class="btn"
+        />
+        <input type="reset" name="" id="" value="Reset" class="btn" />
+      </form>
+      <div id="ajaxDiv"></div>
+      <script>
+        function search() {
+          var ajaxRequest = new XMLHttpRequest();
+          ajaxRequest.onreadystatechange = function () {
+            if (ajaxRequest.readyState == 4) {
+              var ajaxDisplay = document.getElementById("ajaxDiv");
+              ajaxDisplay.innerHTML = ajaxRequest.responseText;
+            }
+          };
+          var name = document.getElementById("name").value;
+          var id = document.getElementById("id").value;
+          var queryString = "?name=" + name + "&id=" + id;
+          ajaxRequest.open("GET", "search1.php" + queryString, true);
+          ajaxRequest.send();
+        }
+      </script>
+    </section>
+  </body>
+</html>
+<style>
+  .main form {
+    margin-top: -300px;
+    padding: 100px 200px;
+    position: fixed;
+  }
+
+  section {
+    padding: 60px;
+  }
+</style>

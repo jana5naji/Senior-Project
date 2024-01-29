@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@100;200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+header .img {
+  width: 90px;
+  top: auto;
+  display: flex;
+  padding: 8px;
+}
+.navigation a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navigation a:hover {
+  color: blue;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url("../pic/Picture3.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.btn {
+  padding: 5px 6px;
+  border: 5px #0b41ff;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #0b41ff;
+  font-weight: bold;
+  color: white;
+}
